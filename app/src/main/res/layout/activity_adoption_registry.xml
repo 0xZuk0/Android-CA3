@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".AdoptionRegistry">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/missing_registry_pet_image"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/upload" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UPLOAD IMAGE"
+            android:layout_below="@+id/missing_registry_pet_image"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/missing_report_upload_button"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/missing_report_upload_button"
+            android:hint="NAME"
+            android:gravity="center"
+            android:id="@+id/missing_registry_pet_name"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/missing_registry_pet_name"
+            android:hint="AGE"
+            android:gravity="center"
+            android:id="@+id/missing_registry_pet_age"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <EditText
+            android:id="@+id/missing_registry_pet_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/desc_tv1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:hint="Give Complete Description of Pet" />
+
+        <TextView
+            android:id="@+id/desc_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/missing_registry_pet_age"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:text="DESCRIPTION OF PET"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/lastseen_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_below="@id/missing_registry_pet_description"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="LAST SEEN INFORMATION"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/adoption_registry_pet_lastseen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lastseen_tv1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:hint="Where Was The Pet Last Seen ?" />
+
+        <TextView
+            android:id="@+id/contact_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adoption_registry_pet_lastseen"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="CONTACT INFORMATION"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contact_tv1"
+            android:hint="MOBILE NUMBER"
+            android:gravity="center"
+            android:id="@+id/missing_registry_pet_mobile_number"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/missing_registry_pet_mobile_number"
+            android:hint="EMAIL"
+            android:gravity="center"
+            android:id="@+id/missing_registry_pet_email"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/missing_registry_pet_email"
+            android:hint="ADDRESS"
+            android:gravity="center"
+            android:id="@+id/missing_registry_pet_address"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/missing_registry_pet_address"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/missing_registry_pet_submit_button"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="50dp"
+            android:text="SUBMIT" />
+    </RelativeLayout>
+
+</ScrollView>

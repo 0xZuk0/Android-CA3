@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="20dp"
+    android:id="@+id/my_submission_layout"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/my_submission_pet_image"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/my_submission_pet_name"
+        android:layout_toRightOf="@+id/my_submission_pet_image"
+        android:text="Name"
+        android:textSize="30dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/my_submission_pet_image"
+        android:layout_below="@id/my_submission_pet_name"
+        android:layout_marginTop="10dp"
+        android:id="@+id/my_submission_pet_age"
+        android:text="Age"
+        android:textSize="30dp"
+        android:layout_marginLeft="10dp"
+        />
+</RelativeLayout>

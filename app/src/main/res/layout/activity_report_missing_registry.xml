@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".AdoptionRegistry">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/missing_registry_pet_image"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/upload" />
+
+        <Button
+            android:id="@+id/missing_report_upload_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/missing_registry_pet_image"
+            android:layout_centerHorizontal="true"
+            android:text="UPLOAD IMAGE" />
+
+        <EditText
+            android:id="@+id/missing_registry_pet_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/missing_report_upload_button"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:hint="NAME" />
+
+        <EditText
+            android:id="@+id/missing_registry_pet_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/missing_registry_pet_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:hint="AGE" />
+
+        <EditText
+            android:id="@+id/missing_registry_pet_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/desc_tv1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:hint="Give Complete Description of Pet" />
+
+        <TextView
+            android:id="@+id/desc_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/missing_registry_pet_age"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:text="DESCRIPTION OF PET"
+            android:textSize="20dp" />
+
+
+
+        <TextView
+            android:id="@+id/contact_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/feature4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="CONTACT INFORMATION"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/missing_registry_pet_mobile_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contact_tv1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:hint="MOBILE NUMBER" />
+
+        <EditText
+            android:id="@+id/missing_registry_pet_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/missing_registry_pet_mobile_number"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:hint="EMAIL" />
+
+        <EditText
+            android:id="@+id/missing_registry_pet_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/missing_registry_pet_email"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:hint="ADDRESS" />
+
+        <Button
+            android:id="@+id/missing_registry_pet_submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/missing_registry_pet_address"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="50dp"
+            android:text="SUBMIT" />
+
+        <TextView
+            android:id="@+id/features_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/missing_registry_pet_description"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="FEATURES"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/feature1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/features_tv1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:hint="Feature 1" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feature1"
+            android:hint="Feature 2"
+            android:gravity="center"
+            android:id="@+id/feature2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feature2"
+            android:hint="Feature 3"
+            android:gravity="center"
+            android:id="@+id/feature3"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feature3"
+            android:hint="Feature 4"
+            android:gravity="center"
+            android:id="@+id/feature4"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+    </RelativeLayout>
+
+</ScrollView>
