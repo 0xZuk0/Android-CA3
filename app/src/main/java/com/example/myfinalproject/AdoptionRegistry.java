@@ -23,6 +23,8 @@ public class AdoptionRegistry extends AppCompatActivity {
     EditText petName, petAge, petDescription, petLastSeen, petMobile, petEmail, petAddress;
     Button uploadButton, submitButton;
     Uri imageUri;
+    private String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+.[a-z]+";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +55,7 @@ public class AdoptionRegistry extends AppCompatActivity {
                         petDescription.setText("");
                         petLastSeen.setText("");
                         petMobile.setText("");
+                        petAge.setText("");
                         petEmail.setText("");
                         petAddress.setText("");
                     }

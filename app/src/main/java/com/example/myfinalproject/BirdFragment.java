@@ -52,6 +52,8 @@ public class BirdFragment extends Fragment {
                 intent.putExtra("age", animal.getAge());
                 intent.putExtra("address", animal.getAddress());
                 intent.putExtra("features", animal.getFeatures());
+                intent.putExtra("type", 1);
+
                 intent.putExtra("mobile", animal.getMobileNumber());
                 intent.putExtra("description", animal.getDescription());
                 startActivity(intent);

@@ -2,16 +2,18 @@ package com.example.myfinalproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 public class PetViewerActivity extends AppCompatActivity {
     ImageView petImage;
-    TextView name, age, description, address, mobile, email, feature1, feature2, feature3, feature4;
+    TextView name, age, description, address, mobile, email, feature1, feature2, feature3, feature4, lastseen, lastseenContent, contactHeader;
 
 
     @Override
@@ -30,16 +32,22 @@ public class PetViewerActivity extends AppCompatActivity {
         feature2 = findViewById(R.id.pet_viewer_pet_feature_2);
         feature3 = findViewById(R.id.pet_viewer_pet_feature_3);
         feature4 = findViewById(R.id.pet_viewer_pet_feature_4);
+        lastseen = findViewById(R.id.pet_viewer_pet_last_seen);
+        lastseenContent = findViewById(R.id.pet_viewer_pet_lastseen_content);
+        contactHeader = findViewById(R.id.pet_viewer_contact_details);
 
         Intent intent = getIntent();
 
-        if(intent.getBooleanExtra("flag", true)) {
-            Animals animal = new Animals(intent.getStringExtra("name"), intent.getIntExtra("image", 0), intent.getStringExtra("age"), intent.getStringArrayExtra("features"),
-                    intent.getStringExtra("email"), intent.getStringExtra("mobile"), intent.getStringExtra("address"), intent.getStringExtra("description"));
-
-            petImage.setImageResource(animal.getImage());
+        if (intent.getIntExtra("type", -1) == 1) {
+            Animals animal = new Animals(
+                    intent.getStringExtra("name"), intent.getIntExtra("image", -11111), intent.getStringExtra("age"),
+                    intent.getStringArrayExtra("features"), intent.getStringExtra("email"), intent.getStringExtra("mobile"),
+                    intent.getStringExtra("address"), intent.getStringExtra("description")
+            );
+            int image = animal.getImage();
+            petImage.setImageResource(image);
             name.setText(animal.getName());
-            age.setText(animal.getAge());
+            age.setText(String.valueOf(animal.getAge()) + " Year");
             description.setText(animal.getDescription());
             address.setText(animal.getAddress());
             mobile.setText(animal.getMobileNumber());
@@ -48,11 +56,30 @@ public class PetViewerActivity extends AppCompatActivity {
             feature2.setText(animal.getFeatures()[1]);
             feature3.setText(animal.getFeatures()[2]);
             feature4.setText(animal.getFeatures()[3]);
-        }
-        else {
+            lastseen.setVisibility(View.INVISIBLE);
+            lastseenContent.setVisibility(View.INVISIBLE);
+        } else
+        {
+            if (intent.getBooleanExtra("flag", true)) {
+            MissingPet animal = new MissingPet(intent.getStringExtra("name"), intent.getIntExtra("age", 0), intent.getStringExtra("description"),
+                    intent.getStringExtra("lastseen"), intent.getStringExtra("mobile"), intent.getStringExtra("email"), intent.getStringExtra("address"), intent.getByteArrayExtra("image"));
+            byte[] image = animal.getImage();
+            Bitmap bmp = BitmapFactory.decodeByteArray(image, 0, image.length);
+            petImage.setImageBitmap(bmp);
+            name.setText(animal.getName());
+            age.setText(String.valueOf(animal.getAge()));
+            description.setText(animal.getDescription());
+            address.setText(animal.getAddress());
+            mobile.setText(animal.getMobile());
+            email.setText(animal.getEmail());
+            lastseen.setVisibility(View.VISIBLE);
+            lastseenContent.setVisibility(View.VISIBLE);
+            lastseen.setTextSize(30);
+            lastseenContent.setTextSize(20);
+        } else {
             AdoptionPet animal = new AdoptionPet(intent.getStringExtra("name"), intent.getIntExtra("age", 0), intent.getStringExtra("description")
-            , intent.getStringArrayExtra("features"), intent.getStringExtra("mobile"), intent.getStringExtra("email"), intent.getStringExtra("address")
-            , intent.getByteArrayExtra("image")
+                    , intent.getStringArrayExtra("features"), intent.getStringExtra("mobile"), intent.getStringExtra("email"), intent.getStringExtra("address")
+                    , intent.getByteArrayExtra("image")
             );
 
             byte[] image = animal.getImage();
@@ -68,8 +95,10 @@ public class PetViewerActivity extends AppCompatActivity {
             feature2.setText(animal.getFeatures()[1]);
             feature3.setText(animal.getFeatures()[2]);
             feature4.setText(animal.getFeatures()[3]);
+            lastseen.setVisibility(View.INVISIBLE);
+            lastseenContent.setVisibility(View.INVISIBLE);
         }
-
+    }
 
 
         }

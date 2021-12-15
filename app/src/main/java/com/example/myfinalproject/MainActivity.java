@@ -40,6 +40,13 @@ public class MainActivity extends AppCompatActivity {
         debug = (FloatingActionButton) findViewById(R.id.debug);
         clearAllData = (FloatingActionButton) findViewById(R.id.clearalldata);
 
+        //////////////////////
+        // For Debug Purpose
+        clearAllData.hide();
+        debug.hide();
+
+        ///////////////////////
+
         missingPetFab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

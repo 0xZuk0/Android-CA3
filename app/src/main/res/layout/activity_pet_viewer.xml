@@ -9,8 +9,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="match_parent">
 
         <ImageView
             android:id="@+id/pet_viewer_image"
@@ -31,6 +30,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
             android:text="Pet Name"
+            android:textColor="@color/black"
             android:textSize="40dp" />
 
         <TextView
@@ -41,68 +41,73 @@
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:text="Age 1 Year"
+            android:textColor="@color/black"
             android:textSize="30dp" />
 
         <ImageView
-            android:layout_width="28dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
             android:id="@+id/tag1"
+            android:layout_width="28dp"
             android:layout_height="28dp"
             android:layout_below="@+id/pet_viewer_pet_age"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
             android:src="@drawable/tag" />
 
         <TextView
+            android:id="@+id/pet_viewer_pet_feature_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:layout_marginLeft="5dp"
-            android:text="Pet Features"
-            android:id="@+id/pet_viewer_pet_feature_1"
-            android:layout_toRightOf="@+id/tag1"
             android:layout_below="@+id/pet_viewer_pet_age"
+            android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            />
+            android:layout_toRightOf="@+id/tag1"
+            android:text="Pet Features"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
 
         <ImageView
-            android:layout_width="28dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
             android:id="@+id/tag2"
-            android:layout_toRightOf="@+id/pet_viewer_pet_feature_1"
+            android:layout_width="28dp"
             android:layout_height="28dp"
             android:layout_below="@+id/pet_viewer_pet_age"
-            android:src="@drawable/tag" />
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/pet_viewer_pet_feature_1"
+            android:src="@drawable/tag"
+            android:textColor="@color/black" />
 
         <TextView
+            android:id="@+id/pet_viewer_pet_feature_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/pet_viewer_pet_age"
             android:layout_marginLeft="5dp"
-            android:id="@+id/pet_viewer_pet_feature_2"
             android:layout_marginTop="5dp"
             android:layout_toRightOf="@+id/tag2"
             android:text="Pet Features"
+            android:textColor="@color/black"
             android:textSize="20dp" />
 
         <ImageView
             android:id="@+id/tag3"
             android:layout_width="28dp"
             android:layout_height="28dp"
+
             android:layout_below="@+id/tag1"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:src="@drawable/tag" />
 
         <TextView
+            android:id="@+id/pet_viewer_pet_feature_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/pet_viewer_pet_feature_1"
             android:layout_marginLeft="5dp"
-            android:id="@+id/pet_viewer_pet_feature_3"
             android:layout_marginTop="10dp"
             android:layout_toRightOf="@+id/tag3"
             android:text="Pet Features"
+            android:textColor="@color/black"
             android:textSize="20dp" />
 
         <ImageView
@@ -111,19 +116,20 @@
             android:layout_height="28dp"
             android:layout_below="@+id/tag2"
             android:layout_marginLeft="10dp"
-            android:layout_toRightOf="@+id/pet_viewer_pet_feature_3"
             android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/pet_viewer_pet_feature_3"
             android:src="@drawable/tag" />
 
         <TextView
+            android:id="@+id/pet_viewer_pet_feature_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/pet_viewer_pet_feature_2"
             android:layout_marginLeft="5dp"
-            android:id="@+id/pet_viewer_pet_feature_4"
             android:layout_marginTop="10dp"
             android:layout_toRightOf="@+id/tag4"
             android:text="Pet Features"
+            android:textColor="@color/black"
             android:textSize="20dp" />
 
         <TextView
@@ -136,29 +142,56 @@
             android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
             android:text="Description"
+            android:textColor="@color/black"
             android:textSize="30dp" />
 
         <TextView
+            android:id="@+id/pet_viewer_pet_description_content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/pet_viewer_pet_description"
             android:layout_marginLeft="10dp"
-            android:id="@+id/pet_viewer_pet_description_content"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
-            android:textSize="20dp"
             android:text="Here the pet description will be given this is just for test run and this will not be very helpful"
-            />
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/pet_viewer_pet_last_seen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pet_viewer_pet_description_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:text="Last Seen"
+            android:textSize="0dp" />
+
+        <TextView
+            android:id="@+id/pet_viewer_pet_lastseen_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pet_viewer_pet_last_seen"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Some Last Seen Content"
+            android:textColor="@color/black"
+            android:textSize="0dp" />
 
         <TextView
             android:id="@+id/pet_viewer_contact_details"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/pet_viewer_pet_description_content"
+            android:layout_below="@+id/pet_viewer_pet_lastseen_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
             android:text="Contact Details"
+            android:textColor="@color/black"
             android:textSize="30dp" />
 
         <ImageView
@@ -172,59 +205,58 @@
             android:src="@drawable/address" />
 
         <TextView
+            android:id="@+id/pat_viewer_address"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:id="@+id/pat_viewer_address"
-            android:layout_toRightOf="@+id/pat_viewer_address_image"
             android:layout_below="@+id/pet_viewer_contact_details"
-            android:textSize="15dp"
+            android:layout_toRightOf="@+id/pat_viewer_address_image"
             android:text="Some Address will be given here so Lets make contact"
-            />
+            android:textColor="@color/black"
+            android:textSize="15dp" />
 
         <ImageView
+            android:id="@+id/pet_viewer_telephone_image"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_below="@+id/pat_viewer_address_image"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
-            android:id="@+id/pet_viewer_telephone_image"
             android:src="@drawable/telephone" />
 
         <TextView
+            android:id="@+id/pet_viewer_telephone"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:id="@+id/pet_viewer_telephone"
-            android:layout_toRightOf="@+id/pet_viewer_telephone_image"
             android:layout_below="@+id/pat_viewer_address"
-            android:textSize="15dp"
-            android:text="+(273) 4564 3456"
             android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/pet_viewer_telephone_image"
             android:gravity="center"
-            />
+            android:text="+(273) 4564 3456"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
 
         <ImageView
+            android:id="@+id/pet_viewer_email_image"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/email"
             android:layout_below="@id/pet_viewer_telephone_image"
-            android:id="@+id/pet_viewer_email_image"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
-            />
+            android:src="@drawable/email" />
 
         <TextView
+            android:id="@+id/pet_viewer_email"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:id="@+id/pet_viewer_email"
-            android:layout_toRightOf="@+id/pet_viewer_email_image"
             android:layout_below="@+id/pet_viewer_telephone"
-            android:textSize="15dp"
-            android:text="someemail@email.com"
             android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/pet_viewer_email_image"
             android:gravity="center"
-            />
+            android:text="someemail@email.com"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
 
     </RelativeLayout>
 

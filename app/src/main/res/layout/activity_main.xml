@@ -55,6 +55,7 @@
 
     <TextView
         android:layout_width="wrap_content"
+        android:textColor="@color/black"
         android:layout_height="wrap_content"
         android:layout_above="@+id/main_fab"
         android:layout_marginRight="10dp"
@@ -80,6 +81,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Report Missing"
+        android:textColor="@color/black"
         android:id="@+id/missing_report_textview"
         android:textSize="15dp"
         android:layout_toLeftOf="@+id/report_missing"
@@ -102,6 +104,7 @@
     <TextView
         android:id="@+id/my_report_textview"
         android:layout_width="wrap_content"
+        android:textColor="@color/black"
         android:layout_height="wrap_content"
         android:layout_above="@+id/report_missing"
         android:layout_marginRight="10dp"
@@ -122,16 +125,16 @@
         android:src="@drawable/house" />
 
     <TextView
+        android:id="@+id/set_for_adoption_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Set for Adoption"
-        android:id="@+id/set_for_adoption_textview"
-        android:textSize="15dp"
-        android:layout_toLeftOf="@+id/set_for_adoption"
         android:layout_above="@+id/my_submissions"
+        android:textColor="@color/black"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="25dp"
-        />
+        android:layout_toLeftOf="@+id/set_for_adoption"
+        android:text="Set for Adoption"
+        android:textSize="15dp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"

@@ -81,6 +81,7 @@ public class DogFragment extends Fragment {
                 intent.putExtra("features", animal.getFeatures());
                 intent.putExtra("mobile", animal.getMobileNumber());
                 intent.putExtra("description", animal.getDescription());
+                intent.putExtra("type", 1);
                 startActivity(intent);
             }
         });
@@ -101,8 +102,16 @@ public class DogFragment extends Fragment {
     }
 
     public void populateDogs() {
-        String longDescription = "Muko is one of those dogs which you cant resist. He is so adorable you will feel like hugging him all day. He is very obedient and loves to play with other animals.";
-        listOfDogs.add(new Animals("Muko", R.drawable.muko, "2 Year", new String[]{"Cute", "Adorable", "Lovely", "Baby"}, "adoptanimals@gmail.com", "+(217) 2341-45642", "27 Sherando Trl Hedgesville, West Virginia(WV), 25427", longDescription));
+        String longDescription = "one of those dogs which you cant resist. He is so adorable you will feel like hugging him all day. He is very obedient and loves to play with other animals.";
+        listOfDogs.add(new Animals("Muko", R.drawable.muko, "2", new String[]{"Cute", "Adorable", "Lovely", "Baby"}, "adoptanimals@gmail.com", "+(217) 2341-45642", "27 Sherando Trl Hedgesville, West Virginia(WV), 25427", longDescription));
+        listOfDogs.add(new Animals("Franky", R.drawable.dog2, "2", new String[]{"Cute", "Adorable", "Lovely", "Baby"}, "adoptanimals@gmail.com", "+(217) 2341-45642", "27 Sherando Trl Hedgesville, West Virginia(WV), 25427", longDescription));
+        listOfDogs.add(new Animals("Ludo", R.drawable.dog3, "2", new String[]{"Cute", "Adorable", "Lovely", "Baby"}, "adoptanimals@gmail.com", "+(217) 2341-45642", "27 Sherando Trl Hedgesville, West Virginia(WV), 25427", longDescription));
+        listOfDogs.add(new Animals("Mike", R.drawable.dog4, "2", new String[]{"Cute", "Adorable", "Lovely", "Baby"}, "adoptanimals@gmail.com", "+(217) 2341-45642", "27 Sherando Trl Hedgesville, West Virginia(WV), 25427", longDescription));
+        listOfDogs.add(new Animals("Karl", R.drawable.dog5, "2", new String[]{"Cute", "Adorable", "Lovely", "Baby"}, "adoptanimals@gmail.com", "+(217) 2341-45642", "27 Sherando Trl Hedgesville, West Virginia(WV), 25427", longDescription));
+        listOfDogs.add(new Animals("Gonjiam", R.drawable.dog6, "2", new String[]{"Cute", "Adorable", "Lovely", "Baby"}, "adoptanimals@gmail.com", "+(217) 2341-45642", "27 Sherando Trl Hedgesville, West Virginia(WV), 25427", longDescription));
+        listOfDogs.add(new Animals("Jumba", R.drawable.dog7, "2", new String[]{"Cute", "Adorable", "Lovely", "Baby"}, "adoptanimals@gmail.com", "+(217) 2341-45642", "27 Sherando Trl Hedgesville, West Virginia(WV), 25427", longDescription));
+        listOfDogs.add(new Animals("Parker", R.drawable.dog8, "2", new String[]{"Cute", "Adorable", "Lovely", "Baby"}, "adoptanimals@gmail.com", "+(217) 2341-45642", "27 Sherando Trl Hedgesville, West Virginia(WV), 25427", longDescription));
+
     }
 
 }

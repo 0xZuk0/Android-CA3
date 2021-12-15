@@ -53,6 +53,7 @@ public class CatFragment extends Fragment {
                 intent.putExtra("address", animal.getAddress());
                 intent.putExtra("features", animal.getFeatures());
                 intent.putExtra("mobile", animal.getMobileNumber());
+                intent.putExtra("type", 1);
                 intent.putExtra("description", animal.getDescription());
                 startActivity(intent);
             }
@@ -100,10 +101,14 @@ public class CatFragment extends Fragment {
 
     public void populateCats() {
         String longDescription = "Some Very Long Descritpion for testing i don't know what i can typeing whatever comes in my mind i will type this thing";
-        listOfCats.add(new Animals("Empress", R.drawable.cat, "1 Year", new String[]{"Cute", "Adorable", "Lovely", "Baby"}, "someemail@email.com", "222222222", "Some Very Big Address Given By the users i don't know what i can write here by let's see", longDescription));
-        listOfCats.add(new Animals("Empress", R.drawable.cat, "1 Year", new String[]{"Cute", "Adorable", "Lovely", "Baby"}, "someemail@email.com", "222222222", "Some Very Big Address Given By the users i don't know what i can write here by let's see", longDescription));
-        listOfCats.add(new Animals("Empress", R.drawable.cat, "1 Year", new String[]{"Cute", "Adorable", "Lovely", "Baby"}, "someemail@email.com", "222222222", "Some Very Big Address Given By the users i don't know what i can write here by let's see", longDescription));
-        listOfCats.add(new Animals("Empress", R.drawable.cat, "1 Year", new String[]{"Cute", "Adorable", "Lovely", "Baby"}, "someemail@email.com", "222222222", "Some Very Big Address Given By the users i don't know what i can write here by let's see", longDescription));
+        listOfCats.add(new Animals("Empress", R.drawable.cat1, "1", new String[]{"Cute", "Adorable", "Lovely", "Baby"}, "someemail@email.com", "222222222", "Some Very Big Address Given By the users i don't know what i can write here by let's see", longDescription));
+        listOfCats.add(new Animals("Prinston", R.drawable.cat2, "1", new String[]{"Cute", "Adorable", "Lovely", "Baby"}, "someemail@email.com", "222222222", "Some Very Big Address Given By the users i don't know what i can write here by let's see", longDescription));
+        listOfCats.add(new Animals("Katty", R.drawable.cat3, "1", new String[]{"Cute", "Adorable", "Lovely", "Baby"}, "someemail@email.com", "222222222", "Some Very Big Address Given By the users i don't know what i can write here by let's see", longDescription));
+        listOfCats.add(new Animals("Jenny", R.drawable.cat4, "1", new String[]{"Cute", "Adorable", "Lovely", "Baby"}, "someemail@email.com", "222222222", "Some Very Big Address Given By the users i don't know what i can write here by let's see", longDescription));
+        listOfCats.add(new Animals("Ross", R.drawable.cat5, "1", new String[]{"Cute", "Adorable", "Lovely", "Baby"}, "someemail@email.com", "222222222", "Some Very Big Address Given By the users i don't know what i can write here by let's see", longDescription));
+        listOfCats.add(new Animals("Pheebee", R.drawable.cat6, "1", new String[]{"Cute", "Adorable", "Lovely", "Baby"}, "someemail@email.com", "222222222", "Some Very Big Address Given By the users i don't know what i can write here by let's see", longDescription));
+        listOfCats.add(new Animals("Monica", R.drawable.cat7, "1", new String[]{"Cute", "Adorable", "Lovely", "Baby"}, "someemail@email.com", "222222222", "Some Very Big Address Given By the users i don't know what i can write here by let's see", longDescription));
+        listOfCats.add(new Animals("Joey", R.drawable.cat8, "1", new String[]{"Cute", "Adorable", "Lovely", "Baby"}, "someemail@email.com", "222222222", "Some Very Big Address Given By the users i don't know what i can write here by let's see", longDescription));
 
     }
 }

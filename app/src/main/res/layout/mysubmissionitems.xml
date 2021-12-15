@@ -16,6 +16,7 @@
         android:id="@+id/my_submission_pet_name"
         android:layout_toRightOf="@+id/my_submission_pet_image"
         android:text="Name"
+        android:textColor="@color/black"
         android:textSize="30dp"
         android:layout_marginLeft="10dp"
         />
@@ -27,6 +28,7 @@
         android:layout_below="@id/my_submission_pet_name"
         android:layout_marginTop="10dp"
         android:id="@+id/my_submission_pet_age"
+        android:textColor="@color/black"
         android:text="Age"
         android:textSize="30dp"
         android:layout_marginLeft="10dp"

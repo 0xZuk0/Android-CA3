@@ -39,7 +39,7 @@ public class MySubmissionCustomAdapter extends RecyclerView.Adapter<MySubmission
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         AdoptionPet adoptionPet = al.get(position);
         holder.name.setText("Name : " + adoptionPet.getName());
-        holder.age.setText("Age : " + String.valueOf(adoptionPet.getAge()));
+        holder.age.setText("Age : " + String.valueOf(adoptionPet.getAge()) + " Year");
         byte[] image = adoptionPet.getImage();
         Bitmap bmp = BitmapFactory.decodeByteArray(image, 0, image.length);
         holder.image.setImageBitmap(bmp);

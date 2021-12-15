@@ -66,14 +66,15 @@
             android:id="@+id/desc_tv1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:layout_below="@id/missing_registry_pet_age"
             android:layout_centerHorizontal="true"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
-            android:textStyle="bold"
             android:layout_marginRight="10dp"
             android:text="DESCRIPTION OF PET"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
 
 
@@ -87,6 +88,7 @@
             android:textStyle="bold"
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
+            android:textColor="@color/black"
             android:text="CONTACT INFORMATION"
             android:textSize="20dp" />
 
@@ -141,6 +143,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginLeft="10dp"
             android:textStyle="bold"
+            android:textColor="@color/black"
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
             android:text="FEATURES"

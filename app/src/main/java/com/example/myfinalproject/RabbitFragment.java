@@ -47,6 +47,7 @@ public class RabbitFragment extends Fragment {
                 Animals animal = listOfRabbit.get(i);
                 Intent intent = new Intent(getActivity(), PetViewerActivity.class);
                 intent.putExtra("name", animal.getName());
+                intent.putExtra("type", 1);
                 intent.putExtra("image", animal.getImage());
                 intent.putExtra("email", animal.getEmail());
                 intent.putExtra("age", animal.getAge());
@@ -102,9 +103,9 @@ public class RabbitFragment extends Fragment {
     public void populateRabbits() {
         String longDescription = "Some Very Long Descritpion for testing i don't know what i can typeing whatever comes in my mind i will type this thing";
 
-        listOfRabbit.add(new Animals("Snow White", R.drawable.rabbit, "1 Year", new String[]{"Cute", "Adorable", "Lovely", "Baby"}, "someemail@email.com", "222222222", "Some Very Big Address Given By the users i don't know what i can write here by let's see", longDescription));
-        listOfRabbit.add(new Animals("Snow White", R.drawable.rabbit, "1 Year", new String[]{"Cute", "Adorable", "Lovely", "Baby"}, "someemail@email.com", "222222222", "Some Very Big Address Given By the users i don't know what i can write here by let's see", longDescription));
-        listOfRabbit.add(new Animals("Snow White", R.drawable.rabbit, "1 Year", new String[]{"Cute", "Adorable", "Lovely", "Baby"}, "someemail@email.com", "222222222", "Some Very Big Address Given By the users i don't know what i can write here by let's see", longDescription));
+        listOfRabbit.add(new Animals("Johnny", R.drawable.rabbit1, "1", new String[]{"Cute", "Adorable", "Lovely", "Baby"}, "someemail@email.com", "222222222", "Some Very Big Address Given By the users i don't know what i can write here by let's see", longDescription));
+        listOfRabbit.add(new Animals("Mr. Ribiit", R.drawable.rabbit2, "1", new String[]{"Cute", "Adorable", "Lovely", "Baby"}, "someemail@email.com", "222222222", "Some Very Big Address Given By the users i don't know what i can write here by let's see", longDescription));
+        listOfRabbit.add(new Animals("Kold Kale", R.drawable.rabbit3, "1", new String[]{"Cute", "Adorable", "Lovely", "Baby"}, "someemail@email.com", "222222222", "Some Very Big Address Given By the users i don't know what i can write here by let's see", longDescription));
 
     }
 }
